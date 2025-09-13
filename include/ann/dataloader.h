@@ -24,6 +24,7 @@ class DataLoader {
   DataLoader(Dataset<DType, LType>* ptr_dataset, int batch_size,
              bool shuffle = true, bool drop_last = false, int seed=-1) {
     // TODO implement
+    seed = 0; //! Default seed
     this->ptr_dataset=ptr_dataset;
     this->batch_size=batch_size;
     this->shuffle=shuffle;
@@ -35,7 +36,7 @@ class DataLoader {
     indices=xt::arange<int>(sample);
     if(shuffle==true){
       // Use the default random set of numbers
-      //xt::random::default_engine_type engine(0);
+      // xt::random::default_engine_type engine(0);
       // Shuffle the indices along the first dimension (dimension 0)
       if(seed >=0){
         xt::random::seed(m_seed);
