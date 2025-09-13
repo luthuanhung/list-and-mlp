@@ -13,6 +13,10 @@ It includes:
 Make sure you have **g++ (C++17)** installed.  
 
 ### 🔨 Build
+
+To build this project, you need to use **Ubuntu** or **WSL (Windows Subsystem for Linux)**.  
+The recommended compiler is **g++ with C++17 support**.
+
 ```bash
 g++ -fsanitize=address -o main -Iinclude -Isrc -std=c++17 \
     main.cpp \
@@ -22,6 +26,9 @@ g++ -fsanitize=address -o main -Iinclude -Isrc -std=c++17 \
     test/random_test/random_test.cpp \
     src/ann/xtensor_lib.cpp src/util/Point.cpp
 ```
+⚠️ Note for Windows users:
+Building directly on Windows (PowerShell or CMD) may cause compilation errors (see screenshot below).
+![Error of build code with Window](image-3.png)
 
 🚀 Run Instructions
 
@@ -31,38 +38,50 @@ You can run different test modes depending on the component you want to check:
 
 Array List
 
-```
+```bash
 ./main test_unit_array
 ./main test_unit_array nameFunctionUnitTest
 ```
 
 Linked List
-```
+
+```bash
 ./main test_unit_linkedList
 ./main test_unit_linkedList nameFunctionUnitTest
 ```
 
 Dataset
-```
+
+```bash
 ./main test_unit_data
 ./main test_unit_data nameFunctionUnitTest
 ```
 
 🎲 Randomized Tests
-```
+
+```bash
 ./main test_random number_1 number_2
 ./main test_random number
 ```
 
-📸 Sample Results
+# 🔔 Notice  
 
-Here you can add screenshots or terminal outputs to show example runs of the project:
+The default **random seed** is set to `0` to ensure that the program produces **deterministic outputs** (same result every run).  
+You can find this setting at **line 27** in `include/ann/dataloader.h`.  
+
+👉 If you want to test the code with **random outcomes**, simply **comment out this line**.  
+
+![Notice about seed](image-4.png)
+
+📸 Sample Results
+Here are some example outputs from the tests:
 
 # Example: Array List Test
-./main test_unit_array
-
-
-👉 (Insert your screenshot here)
+![Outcome of Array List](image.png)
+# Example: Linked List Test
+![Outcome of Linked List](image-1.png)
+# Example: Data Loader Test
+![Outcome of Data Loader](image-2.png)
 
 ✨ Features
 
@@ -73,6 +92,3 @@ Uses xtensor for tensor operations
 Implements both array-based and linked-list data structures
 
 Provides a foundation for building and running a Multi-Layer Perceptron
-
-
-Bạn có muốn tôi thêm luôn **badge đẹp (build passing, C++17, xtensor)
