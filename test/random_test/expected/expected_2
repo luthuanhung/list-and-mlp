@@ -1,0 +1,19 @@
+len=3
+get_data_shape=(3, 4)
+get_data_shape=()
+foreach
+getitem -1
+Error: Out of range exception: Index is out of range!
+getitem 0
+getData { -60.511628,  177.739311,  -45.976743,  -66.702679}
+getLabel 0
+getitem 1
+getData {-113.469301,   42.238577,   90.979231,  -79.5535  }
+getLabel 0
+getitem 2
+getData {-241.135186,   82.64296 ,  161.81226 ,  109.582736}
+getLabel 0
+getitem 3
+Error: Out of range exception: Index is out of range!
+getitem 4
+Error: Out of range exception: Index is out of range!

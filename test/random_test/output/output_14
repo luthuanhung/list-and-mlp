@@ -1,0 +1,59 @@
+len=14
+get_data_shape=(14,)
+get_data_shape=()
+foreach
+getData { -93.987044,  192.58847 ,  -54.773978,  128.505086}
+getLabel 0
+getData { 192.420589,   16.46447 ,   73.996266, -153.648202}
+getLabel 0
+getData { 117.75875 ,  -62.87669 ,  150.892512,  -80.141922,   12.900221,
+   57.20636 }
+getLabel 0
+getitem -1
+Error: Out of range exception: Index is out of range!
+getitem 0
+getData  192.58847 
+getLabel 0
+getitem 1
+getData -54.773978
+getLabel 0
+getitem 2
+getData  16.46447 
+getLabel 0
+getitem 3
+getData  192.420589
+getLabel 0
+getitem 4
+getData -153.648202
+getLabel 0
+getitem 5
+getData  73.996266
+getLabel 0
+getitem 6
+getData -62.87669 
+getLabel 0
+getitem 7
+getData  57.20636 
+getLabel 0
+getitem 8
+getData -80.141922
+getLabel 0
+getitem 9
+getData  150.892512
+getLabel 0
+getitem 10
+getData  128.505086
+getLabel 0
+getitem 11
+getData -93.987044
+getLabel 0
+getitem 12
+getData  117.75875 
+getLabel 0
+getitem 13
+getData  12.900221
+getLabel 0
+getitem 14
+Error: Out of range exception: Index is out of range!
+getitem 15
+Error: Out of range exception: Index is out of range!

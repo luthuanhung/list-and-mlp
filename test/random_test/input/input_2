@@ -1,0 +1,14 @@
+seed = 25
+label - null
+DataLoader - 6 - True - True
+shape = 3 x 4
+len
+get_data_shape
+get_label_shape
+foreach
+getitem -1
+getitem 0
+getitem 1
+getitem 2
+getitem 3
+getitem 4
