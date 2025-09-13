@@ -77,11 +77,11 @@ You can find this setting at **line 27** in `include/ann/dataloader.h`.
 Here are some example outputs from the tests:
 
 # Example: Array List Test
-![Outcome of Array List](image.png)
+![Outcome of Array List](image-5.png)
 # Example: Linked List Test
-![Outcome of Linked List](image-1.png)
+![Outcome of Linked List](image-6.png)
 # Example: Data Loader Test
-![Outcome of Data Loader](image-2.png)
+![Outcome of Data Loader](image-7.png)
 
 ✨ Features
 
